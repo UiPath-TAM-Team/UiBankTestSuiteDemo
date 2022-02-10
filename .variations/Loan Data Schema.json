@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "Amount": {
+          "type": "string"
+        },
+        "Term": {
+          "type": "string"
+        },
+        "Income": {
+          "type": "string"
+        },
+        "Age": {
+          "type": "string"
+        },
+        "Expected_Rate": {
+          "type": "string"
+        },
+        "Expected_Approved": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "Amount",
+        "Term",
+        "Income",
+        "Age",
+        "Expected_Approved"
+      ]
+    }
+  ]
+}

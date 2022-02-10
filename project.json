@@ -1,0 +1,129 @@
+{
+  "name": "UiBank Demo",
+  "description": "Blank Process",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.11.4]",
+    "UiPath.Mail.Activities": "[1.12.3]",
+    "UiPath.System.Activities": "[21.10.4]",
+    "UiPath.Testing.Activities": "[1.4.6]",
+    "UiPath.UIAutomation.Activities": "[21.10.5]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "21.4.4.0",
+  "projectVersion": "1.2.1",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": true,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": false
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": [
+        "Test Cases/End to End/UiBank Test Data.xlsx"
+      ]
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "e26113b0-e325-488d-9e91-e4fa0b2aa939",
+        "fileName": "Test Cases\\UiBank Selectors\\UiBank Main Page.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "2180ec91-28b7-493a-808a-67bd09cc5eb7",
+        "fileName": "Test Cases\\UiBank Selectors\\UiBank Loans Page.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "d65ec669-2457-4892-886d-326a371d4a61",
+        "fileName": "Test Cases\\UiBank Selectors\\UiBank Version.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "880896ec-bfdf-48a9-8ffb-c685aa57bff9",
+        "fileName": "Test Cases\\UiBank Selectors\\UiBank Loan Application.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "8bcfa6d3-0926-4035-8e95-791829bd91a1",
+        "fileName": "Test Cases\\UiBank Selectors\\UiBank Approved Page.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "9c91ab37-c417-4144-b5f8-ead7fc5c49f3",
+        "dataVariationFilePath": ".variations\\UiBank Test Data_Sheet1.json",
+        "fileName": "Test Cases\\End to End\\End to End.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "5edbea2f-7fb6-42b8-b897-061587079a3d",
+        "fileName": "Test Cases\\Requirements\\Navigation Test Case.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "0a601b05-2435-4b80-9be9-a51daf6a46df",
+        "fileName": "Test Cases\\Requirements\\Fill Application Test Case.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "26b45dc4-3c7d-4099-a068-6acccc9e458d",
+        "fileName": "Test Cases\\Requirements\\Submit Application Test Case.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "0be449ff-9758-42d4-bdad-932e0ded8540",
+        "fileName": "Test Cases\\Requirements\\Loan Result Approved Test Case.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "fa0f5d68-2ab0-4e7d-a4da-2ef0efd99702",
+        "fileName": "Test Cases\\Requirements\\Loan Result Denied Test Case.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "2b5b8b55-9d66-4be2-9117-8b50fdb4335d",
+        "fileName": "Test Cases\\Requirements\\Loan Result Rate LoanID Test Case.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "540590ae-cef6-4a47-a021-3964370d5e56",
+        "dataVariationFilePath": ".variations\\UiBank Test Data_Sheet1.json",
+        "fileName": "TestCase.xaml"
+      }
+    ],
+    "modernBehavior": true
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "445bec47-fc36-49f6-a884-531faefa8330",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Legacy"
+}

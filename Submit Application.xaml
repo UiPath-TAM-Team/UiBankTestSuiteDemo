@@ -1,0 +1,100 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Submit_Application" sap:VirtualizedContainerService.HintSize="1771,886" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="32">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="64">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: UiBank" sap:VirtualizedContainerService.HintSize="434,607" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" Version="V1">
+    <uix:NApplicationCard.Body>
+      <ActivityAction x:TypeArguments="x:Object">
+        <ActivityAction.Argument>
+          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+        </ActivityAction.Argument>
+        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,391" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NClick ClickType="Single" DisplayName="Click 'Submit Loan Application'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left">
+            <uix:NClick.Target>
+              <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/loans/apply" DesignTimeRectangle="1048, 880, 480, 50" ElementType="Button" FriendlyName="'Submit Loan Application'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' aaname='Submit Loan Application' check:text='Submit Loan Application' /&gt;" ImageBase64="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" InformativeScreenshot="7e6d46264e1616814e535ba943c4fbbe.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector, Image" />
+            </uix:NClick.Target>
+          </uix:NClick>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Submitting Loan&quot;]" />
+        </Sequence>
+      </ActivityAction>
+    </uix:NApplicationCard.Body>
+    <uix:NApplicationCard.TargetApp>
+      <uix:TargetApp Area="64, 2, 1265, 1456" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="e82c3be0b77666ab08aa0fd7ab2d71bc.png" Selector="&lt;html app='chrome.exe' title='UiBank'/&gt;" Url="https://uibank.uipath.com/loans/apply" />
+    </uix:NApplicationCard.TargetApp>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+  </uix:NApplicationCard>
+</Activity>
