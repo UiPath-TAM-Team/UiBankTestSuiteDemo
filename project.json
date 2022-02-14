@@ -71,7 +71,7 @@
       {
         "editingStatus": "Publishable",
         "testCaseId": "9c91ab37-c417-4144-b5f8-ead7fc5c49f3",
-        "dataVariationFilePath": ".variations\\UiBank Test Data_Sheet1.json",
+        "dataVariationFilePath": ".variations\\UiBank Test Data_Sheet1_1.json",
         "fileName": "Test Cases\\End to End\\End to End.xaml"
       },
       {
@@ -103,12 +103,6 @@
         "editingStatus": "Publishable",
         "testCaseId": "2b5b8b55-9d66-4be2-9117-8b50fdb4335d",
         "fileName": "Test Cases\\Requirements\\Loan Result Rate LoanID Test Case.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "540590ae-cef6-4a47-a021-3964370d5e56",
-        "dataVariationFilePath": ".variations\\UiBank Test Data_Sheet1.json",
-        "fileName": "TestCase.xaml"
       }
     ],
     "modernBehavior": true
