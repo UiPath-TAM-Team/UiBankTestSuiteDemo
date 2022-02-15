@@ -17,3 +17,17 @@ steps:
     outputType: 'Process'
     orchestratorConnection: 'TestSuiteDemo'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
+- task: UiPathPack@2
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: '$(Build.SourcesDirectory)'
+    outputType: 'Library'
+    orchestratorConnection: 'TestSuiteDemo'
+    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
+- task: UiPathDeploy@2
+  inputs:
+    orchestratorConnection: 'TestSuiteDemo'
+    packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
+    folderName: 'Test'
+    entryPoints: 'Main.xaml'
+
