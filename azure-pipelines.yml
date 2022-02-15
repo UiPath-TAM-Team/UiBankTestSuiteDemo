@@ -17,17 +17,13 @@ steps:
     outputType: 'Process'
     orchestratorConnection: 'TestSuiteDemo'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
-- task: UiPathPack@2
+- task: UiPathTest@2
   inputs:
-    versionType: 'AutoVersion'
-    projectJsonPath: '$(Build.SourcesDirectory)'
-    outputType: 'Library'
+    testTarget: 'TestProject'
     orchestratorConnection: 'TestSuiteDemo'
-    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
-- task: UiPathDeploy@2
+    folderName: 'Shared'
+- task: PublishBuildArtifacts@1
   inputs:
-    orchestratorConnection: 'TestSuiteDemo'
-    packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
-    folderName: 'Test'
-    entryPoints: 'Main.xaml'
-
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'BuildPipelineArtifact'
+    publishLocation: 'Container'
